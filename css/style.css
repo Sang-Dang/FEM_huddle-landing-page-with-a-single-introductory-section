@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins, sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    background-image: url(../images/bg-mobile.svg);
+    background-color: var(--violet);
+    background-repeat:no-repeat;
+    height: auto;
+    width: 100%;
+    color: white;
+    padding: 2.6rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container > header {
+    margin-bottom: 3rem;
+}
+
+.container > header > img {
+    width: 10rem;
+}
+
+.container > main > .content > h1 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem
+}
+
+.container > main > .content > p {
+    margin: 1rem 0 1.2rem;
+    font-weight: 100;
+}
+
+.container > main > .content > button {
+    width: 60%;
+    border-radius: 3rem;
+    padding: 8px 0;
+    color: var(--violet);
+    font-family: 'Open sans', sans-serif;
+    font-size: .8rem;
+    background-color: white;
+    border: none;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    transition: all 0.1s linear;
+}
+
+.container > main > .content > button:hover {
+    color: white;
+    background-color: var(--soft-magenta);
+}
+
+.container > footer {
+    padding-top: 3rem;
+}
+
+.container > footer > .social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.container > footer > .social > i {
+    border: 1px solid white;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s linear;
+}
+
+.container > footer > .social > i:hover {
+    border-color: var(--soft-magenta);
+    color: var(--soft-magenta);
+}
+
+@media (min-width: 500px) {
+    .container {
+        background-image: url(../images/bg-desktop.svg);background-position: 0%;
+        height: 100vh;
+        text-align: left;
+    }
+
+    .container > header {
+        margin-bottom: 3rem;
+    }
+
+    .container > header > img {
+        width: 11rem;
+    }
+
+    .container > main > .image { 
+        float: left;
+        margin-right: 3rem;
+    }
+
+    .container > main > .content {
+        padding-top: 2px;
+    }
+
+    .container > main > .content > h1 {
+        font-size: 3rem;
+    }
+
+    .container > main > .content > p {
+        font-size: 1.1rem;
+    }
+    .container > main > .content > button {
+        width: 200px;
+        font-size: 1.1rem;
+    }
+
+    .container > main::after {
+        content: "";
+        display: grid;
+        clear:both;
+    }
+
+    .container > footer {
+        padding-top: 0rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
