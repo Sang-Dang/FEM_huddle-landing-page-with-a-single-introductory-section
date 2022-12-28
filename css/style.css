@@ -89,7 +89,7 @@ p {
     color: var(--soft-magenta);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1200px) {
     .container {
         background-image: url(../images/bg-desktop.svg);background-position: 0%;
         height: 100vh;
